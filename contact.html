@@ -27,6 +27,7 @@
   </header>
 
   <div id="nav-top">
+    <button class="dropbtn">Menu</button>
     <nav id="nav-content">
       <a class="nav-link" href="medellin.html">Medellin</a>
       <a class="nav-link" href="education.html">Education</a>
@@ -37,43 +38,31 @@
     </nav>
   </div>
 
-  <nav id="nav-sidebar">
-    <ul>
-      <li><a class="nav-link-page" href="#history">History</a></li>
-      <li><a class="nav-link-page" href="#symbols">Symbols</a></li>
-      <li><a class="nav-link-page" href="#general-data">General data</a></li>
-      <li><a class="nav-link-page" href="#demographics">Demographics</a></li>
-      <li><a class="nav-link-page" href="#law-government">Law and government</a></li>
+  <main>
 
-    </ul>
-  </nav>
-
-  <main id="main-doc">
-    <section id="history">
-      <h2>History</h2>
-      <hr>
-      <article>
-        <p>In August 1541, Marshal Jorge Robledo was in the place known today as Heliconia when he saw in the distance
-          what he thought was a valley. He sent Jerónimo Luis Tejelo to explore the territory, and during the night of
-          August 23 Tejelo reached the plain of what is now Aburrá Valley. The Spaniards gave it the name of "Valley
-          of Saint Bartholomew", but this was soon changed for the native name Aburrá, meaning "Painters", due to the
-          textile decorations of the natives.</p>
-      </article>
-    </section>
-
-    <section id="symbols">
-      <h2>Symbols</h2>
-      <hr>
-      <article>
-        <h3>Seal</h3>
-        <img src="https://www.lifeder.com/wp-content/uploads/2017/11/Medellin-261x300.jpg" alt="medellins seal"
-          Class="symbol-img">
-        <h3>Flag</h3>
-        <img src="http://1.bp.blogspot.com/--61J3o-rTH4/TlwQSAlryQI/AAAAAAAAABA/a2XliSSCbU8/s1600/BANDERA.png"
-          alt="medellins flag" class="symbol-img">
-
-      </article>
-    </section>
+      <section id="contact">
+          <h2>Contact us:</h2>
+          <p>If you have some comments, complaints or claims, contact us through the different ways we have available for it.</p>
+          
+          <form id="form">
+            <label for="country">Request kind:</label>
+            <select>
+              <option value="question">Question</option>
+              <option value="claims">Claims</option>
+              <option value="complaints">Complaints</option>
+            </select>
+            <br>
+            <label for="name">Full name:</label>
+            <input type="text" placeholder="Name" id="name" name:"name" required></input><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" required></input><br>
+            <label for="comment">Leave your comment/question:</label><br><br>
+            <textarea rows="4" cols="15" id="comment"></textarea>
+            <br>
+            <input type="submit" id="submit"></input>
+        
+          </form>
+        </section>
 
   </main>
 
